@@ -1,0 +1,30 @@
+
+This repository includes small example applications that use rs-485 port of the raspicomm.
+
+- rs485_read
+ An example application that receives 10 bytes from the rs-485 port and displays them afterwards.
+
+ Prerequisites:
+ - pyserial python module 
+   make sure you have pyserial python module installed:
+   1. wget https://pypi.python.org/packages/source/p/pyserial/pyserial-2.6.tar.gz
+   2. tar zxvf pyserial-2.6.tar.gz
+   3. cd pyserial-2.6.tar.gz
+   4. sudo python setup.py install
+
+ - git
+   make sure you have git installed:
+   1. sudo apt-get install git
+
+How to use the examples:
+
+0. use git to clone this repository 
+ 'git clone https://github.com/amescon/rpc-python-examples.git'
+
+1. build the examples applications with make and run them
+ 
+ rs485_read
+  'cd rs485_read'  
+  './rs485_read.py'
+
+2. modify the code and play around with it
