@@ -1,30 +1,25 @@
+This repository includes small python example applications that use the RS-485 port of the Raspicomm.
 
-This repository includes small example applications that use rs-485 port of the raspicomm.
+Here is how to use it:
 
-- rs485_read
- An example application that receives 10 bytes from the rs-485 port and displays them afterwards.
+- You will need the pyserial python module to use these applications. To install use these commands:
+  wget https://pypi.python.org/packages/source/p/pyserial/pyserial-2.6.tar.gz
+  tar zxvf pyserial-2.6.tar.gz
+  cd pyserial-2.6/
+  sudo python setup.py install
 
- Prerequisites:
- - pyserial python module 
-   make sure you have pyserial python module installed:
-   1. wget https://pypi.python.org/packages/source/p/pyserial/pyserial-2.6.tar.gz
-   2. tar zxvf pyserial-2.6.tar.gz
-   3. cd pyserial-2.6.tar.gz
-   4. sudo python setup.py install
+- Use GIT to clone the repository to your Raspberry Pi:
+  git clone https://github.com/amescon/rpc-python-examples.git
 
- - git
-   make sure you have git installed:
-   1. sudo apt-get install git
+- The repository includes the following sample apps:
+  - rs485_read
+    Receives 10 bytes from the RS-485 port and displays them afterwards.
 
-How to use the examples:
+- Change to the directory of the application that you want to run:
+  cd rpc-python-examples/rs485_read/
 
-0. use git to clone this repository 
- 'git clone https://github.com/amescon/rpc-python-examples.git'
+- Run the python code.:
+  ./rs485_read.py
 
-1. build the examples applications with make and run them
- 
- rs485_read
-  'cd rs485_read'  
-  './rs485_read.py'
+- Time to have some fun! Modify the code and test your changes!
 
-2. modify the code and play around with it
